@@ -100,7 +100,6 @@ export async function getStaticProps() {
   a https://www.neopets.com/pirates/buriedtreasure/index.phtml button
   make all the three hard efford dailies easier to use
 
-  upload vercel
   pass every dailie to singleDailie object
   add auto-animate library
   add remove your shop lucro tot he dailies
