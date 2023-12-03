@@ -197,6 +197,10 @@ export const SingleDaylies: {
     'daily_puzzle':{
         name:'daily_puzzle',
         url:['https://www.jellyneo.net/?go=dailypuzzle','https://www.neopets.com/community/index.phtml']
+    },
+    'your_shop':{
+        name:'your_shop',
+        url:'https://www.neopets.com/market.phtml?type=till'
     }
 
 }
@@ -277,6 +281,7 @@ export const DailieLinksTwo: DailieGroup = {
         SingleDaylies['slorg'],
         SingleDaylies['fashion'],
         SingleDaylies['daily_puzzle'],
+        SingleDaylies['your_shop']
     ]
 }
 

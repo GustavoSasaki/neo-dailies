@@ -102,5 +102,4 @@ export async function getStaticProps() {
   add auto-animate library
   add remove your shop lucro tot he dailies
   re-render based on clock
-  fix matgma button
 */
