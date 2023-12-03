@@ -93,17 +93,14 @@ export async function getStaticProps() {
   see how enter https://www.neopets.com/prehistoric/battleground/
   isntall flash
   Cliffhanger resolver
-  fruit wheel
 
   talha shop_of_offers
   cook pot
   a https://www.neopets.com/pirates/buriedtreasure/index.phtml button
   make all the three hard efford dailies easier to use
 
-  pass every dailie to singleDailie object
   add auto-animate library
   add remove your shop lucro tot he dailies
   re-render based on clock
-  quizz dailie
   fix matgma button
 */

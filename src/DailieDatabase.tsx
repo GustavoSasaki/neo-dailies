@@ -98,17 +98,175 @@ export const SingleDaylies: {
         name: 'magma',
         expiresIn: { minutes: 10, hour: 0 }
     },
+
+    'fruit_machine': {
+        url: 'https://www.neopets.com/desert/fruit/index.phtml',
+        name: 'fruit_machine'
+    },
+    'fairy_wheel': {
+        url: 'https://www.neopets.com/faerieland/wheel.phtml',
+        name: 'fairy_wheel',
+        expiresIn: 2
+    },
+    'misfortune_wheel': {
+        url: 'https://www.neopets.com/halloween/wheel/index.phtml',
+        name: 'misfortune_wheel',
+        expiresIn: 2
+    },
+    'mediocrity_wheel': {
+        url: 'https://www.neopets.com/prehistoric/mediocrity.phtml',
+        name: 'mediocrity_wheel',
+    },
+    'edna_quest': {
+        url: 'https://www.neopets.com/halloween/witchtower.phtml',
+        name: 'edna_quest',
+        expiresIn: 2
+    },
+    'esophagor_quest': {
+        url: 'https://www.neopets.com/halloween/esophagor.phtml',
+        name: 'esophagor_quest',
+        expiresIn: 2
+    },
+    'kitchen_quest': {
+        name: 'kitchen_quest',
+        url: 'https://www.neopets.com/island/kitchen.phtml',
+        expiresIn: { hour: 1, minutes: 30 }
+    },
+    'snow_faerie_quest': {
+        url: 'https://www.neopets.com/winter/snowfaerie.phtml',
+        name: 'snow_faerie_quest',
+        expiresIn: 2
+    },
+    'coincidence_quest': {
+        url: 'https://www.neopets.com/space/coincidence.phtml',
+        name: 'coincidence_quest'
+    },
+    'donation_tree': {
+        url: 'https://www.neopets.com/donations.phtml',
+        name: 'donation_tree',
+    },
+    'rubbishdump': {
+        url: 'https://www.neopets.com/medieval/rubbishdump.phtml',
+        name: 'rubbishdump'
+    },
+    'thriftshoppe': {
+        url: 'https://www.neopets.com/thriftshoppe/index.phtml',
+        name: 'thriftshoppe',
+    },
+    'haiku':
+    {
+        url: 'https://www.neopets.com/island/haiku/haiku.phtml',
+        name: 'haiku'
+    },
+    'strange_lever': {
+        url: 'https://www.neopets.com/space/strangelever.phtml',
+        name: 'strange_lever'
+    },
+    'jelly': {
+        url: 'https://www.neopets.com/jelly/jelly.phtml',
+        name: 'jelly'
+    },
+    'omelette': {
+        url: 'https://www.neopets.com/prehistoric/omelette.phtml',
+        name: 'omelette'
+    },
+    'mystic': {
+        url: 'https://www.neopets.com/island/mystichut.phtml',
+        name: 'mystic'
+    },
+    'turmaculus':{
+        url: ['https://www.neopets.com/~Brownhownd', 'https://www.neopets.com/medieval/turmaculus.phtml'],
+        name: 'turmaculus'
+    },
+    'wheel_conhecimento':{
+        url: 'https://www.neopets.com/medieval/knowledge.phtml',
+        name: 'wheel_conhecimento'
+    },
+    'marrow':{
+        url: 'https://www.neopets.com/medieval/guessmarrow.phtml',
+        name: 'marrow'
+    },
+    'lunar':{
+        url: ['https://www.neopets.com/shenkuu/lunar/?show=puzzle','https://www.jellyneo.net/?go=lunartemple#calculation'],
+        name: 'lunar'
+    },
+    'food_club':{
+        url: ['https://www.reddit.com/r/neopets/?f=flair_name%3A%22Food%20Club%22','https://www.neopets.com/pirates/foodclub.phtml?type=collect'],
+        name: 'food_club'
+    },
+    'daily_puzzle':{
+        name:'daily_puzzle',
+        url:['https://www.jellyneo.net/?go=dailypuzzle','https://www.neopets.com/community/index.phtml']
+    }
+
 }
 
-export const MagmaPool: DailieGroup = {
-    name: "magma_pool",
-    title: "Magma Pool",
+
+export const DailieLinksThree: DailieGroup = {
+    name: "three_effort",
+    title: "Diffilcult Efford Dailies",
     links: [
-        SingleDaylies['magma'],
+        SingleDaylies['turmaculus'],
+        SingleDaylies['tombola'],
+        SingleDaylies['wheel_conhecimento'],
+        SingleDaylies['snowager'],
+        SingleDaylies['marrow'],
+        SingleDaylies['wiseking'],
+        SingleDaylies['grumpyking'],
+        SingleDaylies['lunar'], 
+        SingleDaylies['food_club']
+    ]
+}
+
+
+export const DailieTrash: DailieGroup = {
+    name: "neo_trash",
+    title: "Trash Dailies",
+    links: [
+        SingleDaylies['haiku'],
+        SingleDaylies['strange_lever'],
+        SingleDaylies['jelly'],
+        SingleDaylies['omelette'],
+        SingleDaylies['mystic']
+    ]
+}
+
+
+export const Poop: DailieGroup = {
+    name: "poop",
+    title: "The poop",
+    links: [
+        SingleDaylies['donation_tree'],
+        SingleDaylies['rubbishdump'],
+        SingleDaylies['thriftshoppe'],
     ],
     expiresDefault: { minutes: 10, hour: 0 }
 }
 
+export const DailieQuests: DailieGroup = {
+    name: "quests",
+    title: "Quests",
+    links: [
+        SingleDaylies['edna_quest'],
+        SingleDaylies['esophagor_quest'],
+        SingleDaylies['kitchen_quest'],
+        SingleDaylies['snow_faerie_quest'],
+        SingleDaylies['coincidence_quest']
+    ],
+    expiresDefault: 2
+}
+
+export const Wheels: DailieGroup = {
+    name: "wheels",
+    title: "Play Wheels",
+    links: [
+        SingleDaylies['fruit_machine'],
+        SingleDaylies['fairy_wheel'],
+        SingleDaylies['misfortune_wheel'],
+        SingleDaylies['mediocrity_wheel'],
+    ],
+    expiresDefault: { minutes: 40, hour: 0 }
+}
 
 export const DailieLinksTwo: DailieGroup = {
     name: "two_effort",
@@ -118,6 +276,7 @@ export const DailieLinksTwo: DailieGroup = {
         SingleDaylies['negg_cave'],
         SingleDaylies['slorg'],
         SingleDaylies['fashion'],
+        SingleDaylies['daily_puzzle'],
     ]
 }
 
@@ -146,152 +305,6 @@ export const DailieLinksZero: DailieGroup = {
         SingleDaylies['month_freebie'],
         SingleDaylies['bank'],
     ]
-}
-
-
-export const DailieQuests: DailieGroup = {
-    name: "quests",
-    title: "Quests",
-    links: [
-        {
-            url: 'https://www.neopets.com/halloween/witchtower.phtml',
-            name: 'edna_quest',
-            expiresIn: 2
-        },
-        {
-            url: 'https://www.neopets.com/halloween/esophagor.phtml',
-            name: 'esophagor_quest',
-            expiresIn: 2
-        },
-        {
-            name: 'kitchen_quest',
-            url: 'https://www.neopets.com/island/kitchen.phtml',
-            expiresIn: { hour: 1, minutes: 30 }
-        },
-        {
-            url: 'https://www.neopets.com/winter/snowfaerie.phtml',
-            name: 'snow_faerie_quest',
-            expiresIn: 2
-        },
-        {
-            url: 'https://www.neopets.com/space/coincidence.phtml',
-            name: 'coincidence_quest'
-        }
-    ],
-    expiresDefault: 2
-}
-
-
-export const DailieLinksThree: DailieGroup = {
-    name: "three_effort",
-    title: "Diffilcult Efford Dailies",
-    links: [
-        {
-            url: 'https://www.neopets.com/~Brownhownd',
-            name: 'turmaculus_resource'
-        },
-        {
-            url: 'https://www.neopets.com/medieval/turmaculus.phtml',
-            name: 'turmaculus'
-        },
-        SingleDaylies['tombola'],
-        {
-            url: 'https://www.neopets.com/medieval/knowledge.phtml',
-            name: 'wheel_conhecimento'
-        },
-        SingleDaylies['snowager'],
-        {
-            url: 'https://www.neopets.com/medieval/guessmarrow.phtml',
-            name: 'marrow'
-        },
-        SingleDaylies['wiseking'],
-        SingleDaylies['grumpyking'],
-        {
-            url: 'https://www.neopets.com/shenkuu/lunar/?show=puzzle',
-            name: 'lunar'
-        },
-        {
-            url: 'https://www.jellyneo.net/?go=lunartemple#calculation',
-            name: 'lunar_cheat'
-        }, {
-            url: 'https://www.neopets.com/pirates/foodclub.phtml?type=collect',
-            name: 'food_club_results'
-        },
-        {
-            url: 'https://www.reddit.com/r/neopets/?f=flair_name%3A%22Food%20Club%22',
-            name: 'food_club'
-        },
-    ]
-}
-
-export const DailieTrash: DailieGroup = {
-    name: "neo_trash",
-    title: "Trash Dailies",
-    links: [
-        {
-            url: 'https://www.neopets.com/island/haiku/haiku.phtml',
-            name: 'haiku'
-        },
-        {
-            url: 'https://www.neopets.com/space/strangelever.phtml',
-            name: 'strange_lever'
-        },
-        {
-            url: 'https://www.neopets.com/jelly/jelly.phtml',
-            name: 'jelly'
-        },
-        {
-            url: 'https://www.neopets.com/prehistoric/omelette.phtml',
-            name: 'omelette'
-        },
-        {
-            url: 'https://www.neopets.com/island/mystichut.phtml',
-            name: 'mystic'
-        }
-    ]
-}
-
-export const Wheels: DailieGroup = {
-    name: "wheels",
-    title: "Play Wheels",
-    links: [
-        {
-            url: 'https://www.neopets.com/faerieland/wheel.phtml',
-            name: 'fairy_wheel',
-            expiresIn: 2
-        },
-        {
-            url: 'https://www.neopets.com/halloween/wheel/index.phtml',
-            name: 'misfortune_wheel',
-            expiresIn: 2
-        },
-        {
-            url: 'https://www.neopets.com/prehistoric/mediocrity.phtml',
-            name: 'mediocrity_wheel',
-        },
-    ],
-    expiresDefault: { minutes: 40, hour: 0 }
-}
-
-
-export const Poop: DailieGroup = {
-    name: "poop",
-    title: "The poop",
-    links: [
-        {
-            url: 'https://www.neopets.com/donations.phtml',
-            name: 'donation_tree',
-        },
-        {
-            url: 'https://www.neopets.com/medieval/rubbishdump.phtml',
-            name: 'rubbishdump'
-        },
-        {
-            url: 'https://www.neopets.com/thriftshoppe/index.phtml',
-            name: 'thriftshoppe',
-        },
-    ],
-    expiresDefault: { minutes: 10, hour: 0 }
 }
 
 
